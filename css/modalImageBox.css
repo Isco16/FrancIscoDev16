@@ -111,15 +111,6 @@
     font-size: 18px;
     color: #ffffff;
     text-align: center;
-	/* background: 
-    var(--map, 
-			linear-gradient(#888, #fff)), 
-		var(--pattern, 
-        radial-gradient(closest-side, #777, #fff) 0/ 1em 1em space); */
-        /* height: calc(100vh - 1em); */
-	/* background-blend-mode: multiply; */
-	/* filter: contrast(21) */
-    /* background-image:linear-gradient(90deg, transparent 0%, #030303 25%, #434343 75%, transparent 100%), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIklEQVQoU2N89+7dfwYsQEhIiBEkzDgkFGDzAbIY2Cv4AACvrBgJjYNGfwAAAABJRU5ErkJggg==); */
 
     --dot-bg: rgb(31, 31, 31);
     --dot-color: rgb(42, 42, 42);
@@ -129,6 +120,11 @@
 		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
 		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
 		var(--dot-color);
+}
+
+.modal-content .col-md-12 .col-md-6{
+    display: block;
+    align-self: center;
 }
 
 @keyframes fadeIn {
