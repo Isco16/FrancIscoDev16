@@ -219,31 +219,44 @@ nav ul li a {
 nav .mini-logo {
 	display: none;
 	color: white;
-	background-color: #333;
+	/* background-color: #333; */
 	width: 100%;
 	height: 100%;
-	margin: -1px;
+	/* margin: -1px; */
 	padding: 0px 0px;
 	align-content: center;
 	border-radius: 1vh;
+	overflow: hidden;
 }
 
 nav .logo {
-	margin: -1px;
+	/* margin: -1px; */
 	padding: 0px 0px;
 	/* background-color: #333; */
 	color: rgb(255, 255, 255);
-	-webkit-text-stroke: 1px rgb(255, 255, 255);
+	/* -webkit-text-stroke: 1px rgb(255, 255, 255); */
 	width: 100%;
 	height: 100%;
 	align-content: center;
 	border-radius: 1vh;
+	overflow: hidden;
+	display: inline-flex;
 }
 
 nav .logo img {
-	max-width: 100%;
-	overflow-y: hidden;
+	/* max-width: 100%; */
+	max-width: 64px;
+	max-height: 64px;
+	/* overflow-y: hidden; */
 }
+
+nav .mini-logo img {
+	/* max-width: 100%; */
+	max-width: 64px;
+	max-height: 64px;
+	/* overflow-y: hidden; */
+}
+
 
 nav .logo h1 {
 	/* align-items: center; */
@@ -251,11 +264,14 @@ nav .logo h1 {
 	font-size: 50px;
 	/* font-family: fantasy; */
 	/* font-weight: 200; */
+	font-style: italic;
 }
 
 nav .mini-logo h1 {
 	/* align-items: center; */
 	margin: 1vh;
+	max-width: 64px;
+	max-height: 64px;
 }
 
 .background-landscape{
@@ -289,7 +305,7 @@ nav ul {
 	-ms-flex-direction: row;
 	flex-direction: row;
 	-ms-flex-pack: distribute;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 nav ul li {
@@ -830,15 +846,13 @@ nav a:hover::before {
 	text-decoration: none;
 }
 
-
-
 /* REPONSIVE */
 
 @media (max-width: 991px) {
 
-	nav ul {
+	/* nav ul {
 		margin-left: 25px;
-	}
+	} */
 
 	.first-content {
 		text-align: center;
