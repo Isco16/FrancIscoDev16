@@ -162,9 +162,9 @@
     opacity: 1;
 }
 
-/* iframe {
+.game-iframe {
     max-width: 80%;
-} */
+}
 
 .youtube-video{
     text-decoration: none;
