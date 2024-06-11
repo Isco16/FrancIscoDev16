@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const modalId = button.getAttribute('data-close');
             const modal = document.getElementById(modalId);
             const iframe = modal.querySelector('iframe');
-            iframe.src = iframe.src; // Reset the iframe src to stop the video
+            if(iframe != null){
+                iframe.src = iframe.src; // Reset the iframe src to stop the video
+            }
             modal.style.display = 'none';
             // const modalId = button.getAttribute('data-close');
             // document.getElementById(modalId).style.display = 'none';
@@ -30,7 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.target.classList.contains('modal')) {
             const modal = event.target;
             const iframe = modal.querySelector('iframe');
-            iframe.src = iframe.src; // Reset the iframe src to stop the video
+            if(iframe != null){
+                iframe.src = iframe.src; // Reset the iframe src to stop the video
+            }
             modal.style.display = 'none';
             // event.target.style.display = 'none';
             // var frame = document.getElementsByClassName('youtube-video');
