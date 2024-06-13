@@ -397,23 +397,23 @@ nav a:hover::before {
 }
 
 .slides .slide:nth-child(1) {
-	background-image: url(../img/LogoFavicon.png);
+	background-image: url(../img/LogoFavicon.ico);
 }
 
 .slides .slide:nth-child(2) {
-	background-image: url(../img/LogoFavicon.png);
+	background-image: url(../img/LogoFavicon.ico);
 }
 
 .slides .slide:nth-child(3) {
-	background-image: url(../img/LogoFavicon.png);
+	background-image: url(../img/LogoFavicon.ico);
 }
 
 .slides .slide:nth-child(4) {
-	background-image: url(../img/LogoFavicon.png);
+	background-image: url(../img/LogoFavicon.ico);
 }
 
 .slides .slide:nth-child(5) {
-	background-image: url(../img/LogoFavicon.png);
+	background-image: url(../img/LogoFavicon.ico);
 }
 
 .slides .slide img {

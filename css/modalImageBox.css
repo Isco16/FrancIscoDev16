@@ -162,8 +162,18 @@
     opacity: 1;
 }
 
+.game-div{
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    /* max-width: 360px; */
+}
+
 .game-iframe {
-    max-width: 80%;
+    max-width: 100%;
 }
 
 .youtube-video{
