@@ -446,7 +446,7 @@ nav a:hover::before {
 
 .first-content h1 {
 	font-size: 38px;
-	padding-block: 8%;
+	padding-block: 6%;
 	color: #fff;
 	display: flex;
 	justify-content: center;
