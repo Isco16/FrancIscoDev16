@@ -124,6 +124,25 @@
         var(--dot-color);
 }
 
+.link-btn {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.link-btn a {
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 8px 15px;
+    margin: 16px;;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+    transition: all 0.5s;
+}
+
 .modal-content .col-md-12 .col-md-6 {
     display: block;
     align-self: center;
