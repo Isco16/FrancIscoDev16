@@ -71,6 +71,8 @@ jQuery(document).ready(function($) {
         
         // add event listener for mousescroll
         $body.bind('false', mouseEvent);
+
+        showSlide(1);
     })        
 
 
