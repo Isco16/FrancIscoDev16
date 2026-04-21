@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
         box.addEventListener('click', () => {
             const modalId = box.getAttribute('data-modal');
             const modal = document.getElementById(modalId);
-            const container = modal.querySelector('.game-container');
-            if (container && !container.querySelector('iframe')) {
+            const game_div = modal.querySelector('.game-div');
+            if (game_div && !game_div.querySelector('iframe')) {
                 const iframe = document.createElement('iframe');
                 iframe.frameborder = '0';
                 iframe.allowfullscreen = '';
                 let src = '';
                 if (modalId === 'modal20') {
                     src = 'https://itch.io/embed-upload/10756645?color=333333';
-                    iframe.width = '640';
+                    iframe.width = '100%';
                     iframe.height = '380';
                 } else if (modalId === 'modal22') {
                     src = 'https://itch.io/embed-upload/10867273?color=333333';
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     iframe.height = '660px';
                 }
                 iframe.src = src;
-                container.appendChild(iframe);
+                game_div.appendChild(iframe);
             }
             document.getElementById(modalId).style.display = 'flex';
         });
@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
             const modalId = button.getAttribute('data-close');
             const modal = document.getElementById(modalId);
-            const container = modal.querySelector('.game-container');
-            if (container) {
-                const iframe = container.querySelector('iframe');
-                if (iframe) container.removeChild(iframe);
+            const game_div = modal.querySelector('.game-div');
+            if (game_div) {
+                const iframe = game_div.querySelector('iframe');
+                if (iframe) game_div.removeChild(iframe);
             }
             modal.style.display = 'none';
             // const modalId = button.getAttribute('data-close');
@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('click', (event) => {
         if (event.target.classList.contains('modal')) {
             const modal = event.target;
-            const container = modal.querySelector('.game-container');
-            if (container) {
-                const iframe = container.querySelector('iframe');
-                if (iframe) container.removeChild(iframe);
+            const game_div = modal.querySelector('.game-container');
+            if (game_div) {
+                const iframe = game_div.querySelector('iframe');
+                if (iframe) game_div.removeChild(iframe);
             }
             modal.style.display = 'none';
             // event.target.style.display = 'none';
