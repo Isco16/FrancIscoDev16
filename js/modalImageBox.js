@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (iframe) game_div.removeChild(iframe);
             }
             modal.style.display = 'none';
-            // const modalId = button.getAttribute('data-close');
-            // document.getElementById(modalId).style.display = 'none';
-            // var frame = document.getElementsByClassName('youtube-video');
-            // frame[0].contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+            const iframe = modal.querySelector('iframe');
+            if(iframe != null){
+                iframe.src = iframe.src; // Reset the iframe src to stop the video
+            }
         });
     });
 
@@ -62,9 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (iframe) game_div.removeChild(iframe);
             }
             modal.style.display = 'none';
-            // event.target.style.display = 'none';
-            // var frame = document.getElementsByClassName('youtube-video');
-            // frame[0].contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+            const iframe = modal.querySelector('iframe');
+            if(iframe != null){
+                iframe.src = iframe.src; // Reset the iframe src to stop the video
+            }
         }
     });
 });
